@@ -3,8 +3,9 @@ describe('Testcases',function()
 {
     it('First testcase',function() 
         {
-cy.visit("https://www.youtube.com/")
-cy.get('#search-input > #search').type('cypress')
-
+cy.visit("http://localhost:8010/home")
+cy.get('#name').type("sudhanshu")
+cy.get('button').click({ force: true, multiple:true
     })
+})
 })
